@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 1.4rem;/*Pour rendre 1rem = 10 pixels*/
+    color: #777;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(6, 85, 6);
+    text-shadow: 5px black;
+    z-index: 9999999;
+}
+
+.container {
+    background-color: #eee;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: green;
+    margin: auto;
+    z-index: 600;
+}
+
+.container-notifications {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 3rem;
+    font-size: 1.2rem;
+    z-index: 550;
+}
+
+/*Les classes lié au script.js*/
+.toast {
+    padding: 1rem;
+    margin: 0.7rem;
+    border: 1px solid #b5b5b5;
+    border-left: 3px solid green;
+    z-index: 1;
+}
